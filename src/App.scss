@@ -1,0 +1,61 @@
+* {
+  background-color: #70a1ff;
+}
+
+$header-color: red;
+$header-text-color: #fdfdfd;
+$card-color: red;
+$card-text-color: #fdfdfd;
+
+@mixin font-customization() {
+  font-size: calc(10px + 1vmin);
+}
+
+@mixin border($b-width, $b-style, $b-color) {
+  border-width: $b-width;
+  border-style: $b-style;
+  border-color: $b-color;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  .header {
+    @extend .container-center;
+    background-color: $header-color;
+    margin: 20px auto;
+    height: 100px;
+    width: 500px;
+    @include border(4px, solid, $header-text-color);
+    .header_text {
+      background-color: $header-color;
+      color: $header-text-color;
+      @include font-customization();
+    }
+  }
+  .card {
+    @extend .container-center;
+    background-color: $card-color;
+    margin: 20px auto;
+    height: 200px;
+    width: 200px;
+    @include border(4px, solid, $header-text-color);
+    .card_name {
+      background-color: $card-color;
+      color: $card-text-color;
+      @include font-customization();
+    }
+  }
+}
