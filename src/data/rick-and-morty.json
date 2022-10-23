@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "value": "Rick",
+    "imgUrl": "https://static.tvtropes.org/pmwiki/pub/images/abcb6534_7913_4eb1_a7a5_62b081ebc628.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 2,
+    "name": "Rick Sanchez",
+    "value": "Rick",
+    "imgUrl": "https://static.tvtropes.org/pmwiki/pub/images/abcb6534_7913_4eb1_a7a5_62b081ebc628.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 3,
+    "name": "Morty Smith",
+    "value": "Morty",
+    "imgUrl": "https://static.tvtropes.org/pmwiki/pub/images/morty_smith_2.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 4,
+    "name": "Morty Smith",
+    "value": "Morty",
+    "imgUrl": "https://static.tvtropes.org/pmwiki/pub/images/morty_smith_2.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 5,
+    "name": "Summer Smith",
+    "value": "Summer",
+    "imgUrl": "https://i.pinimg.com/originals/93/3f/ce/933fce7bf2db6fed7b2a38569fd5f7c4.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 6,
+    "name": "Summer Smith",
+    "value": "Summer",
+    "imgUrl": "https://i.pinimg.com/originals/93/3f/ce/933fce7bf2db6fed7b2a38569fd5f7c4.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 7,
+    "name": "Jerry Smith",
+    "value": "Jerry",
+    "imgUrl": "https://mystickermania.com/cdn/stickers/rick-and-morty/jerry-smith-best-dad-512x512.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 8,
+    "name": "Jerry Smith",
+    "value": "Jerry",
+    "imgUrl": "https://mystickermania.com/cdn/stickers/rick-and-morty/jerry-smith-best-dad-512x512.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 9,
+    "name": "Beth Smith",
+    "value": "Beth",
+    "imgUrl": "https://i.pinimg.com/originals/43/1c/b9/431cb98e914a79c01ef4c7267fa3e0aa.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 10,
+    "name": "Beth Smith",
+    "value": "Beth",
+    "imgUrl": "https://i.pinimg.com/originals/43/1c/b9/431cb98e914a79c01ef4c7267fa3e0aa.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 11,
+    "name": "Squanchy",
+    "value": "Squanchy",
+    "imgUrl": "https://i.pinimg.com/originals/80/c7/d4/80c7d4e772b8edf029ec0f178319e13c.png",
+    "isOpen": false,
+    "isFound": false
+  },
+  {
+    "id": 12,
+    "name": "Squanchy",
+    "value": "Squanchy",
+    "imgUrl": "https://i.pinimg.com/originals/80/c7/d4/80c7d4e772b8edf029ec0f178319e13c.png",
+    "isOpen": false,
+    "isFound": false
+  }
+]

@@ -1,0 +1,39 @@
+$header-color: transparent;
+$header-text-color: #fdfdfd;
+
+@mixin font-customization() {
+  font-size: calc(10px + 3vmin);
+}
+
+@mixin border($b-width, $b-style, $b-color, $b-radius) {
+  border-width: $b-width;
+  border-style: $b-style;
+  border-color: $b-color;
+  border-radius: $b-radius;
+}
+
+.container-customization {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  @extend .container-customization;
+  background-color: $header-color;
+  margin: 20px auto;
+  height: 100px;
+  width: 500px;
+  @include border(4px, solid, $header-text-color, 20px);
+  .header_text {
+    background-color: $header-color;
+    color: $header-text-color;
+    @include font-customization();
+  }
+  .information {
+    background-color: $header-color;
+    color: $header-text-color;
+    @include font-customization();
+    cursor: pointer;
+  }
+}

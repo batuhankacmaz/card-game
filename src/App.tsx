@@ -1,18 +1,15 @@
-import React from 'react'
-
-import './App.scss'
+import React from 'react';
+import CardList from './components/CardList/CardList';
+import Header from './components/Header/Header';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <div className="header">
-        <span className="header_text">Hi Im Header</span>
-      </div>
-      <div className="card">
-        <span className="card_name">Hi Im Card</span>
-      </div>
+      <Header point={10} />
+      <CardList />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
