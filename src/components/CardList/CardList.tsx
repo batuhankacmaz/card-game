@@ -1,17 +1,14 @@
-import React, { ReactNode, useState, useEffect } from 'react';
-import '../../assets/styles/CardListStyle.scss';
+import React, { ReactNode, useEffect } from 'react';
 import Card from '../Card/Card';
-import Rick from '../../assets/images/rick_sanchez.png';
-import data from '../../data/rick-and-morty.json';
+import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import {
+  freezeGame,
+  matchCards,
+  selectCards,
+  selectedCards,
+} from '../../app/cardSlice';
+import '../../assets/styles/CardListStyle.scss';
 
-/*{
-    "id": 1,
-    "name": "Rick Sanchez",
-    "value": "Rick",
-    "imgUrl": "../assets/images/rick_sanchez.png",
-    "isOpen": false,
-    "isFound": false
-  }, */
 interface RickAndMorty {
   id: number;
   name: string;
@@ -40,19 +37,30 @@ function List<ListItem>({
 }
 
 function CardList() {
-  const [rickAndMorty, rickAndMortySet] = useState<RickAndMorty[]>([...data]);
+  const cards = useAppSelector(selectCards);
+  const currentSelectedCards = useAppSelector(selectedCards);
+  const dispatch = useAppDispatch();
 
-  /* useEffect(() => {
-    fetch('../../data/rick-and-morty.json')
-      .then((response) => response.text())
-      .then((data: RickAndMorty[]) => rickAndMortySet(data));
-  }, []); */
+  useEffect(() => {
+    if (currentSelectedCards.length === 2) {
+      dispatch(freezeGame());
+      setTimeout(() => {
+        dispatch(matchCards());
+      }, 600);
+    }
+  }, [dispatch, currentSelectedCards]);
+
   return (
     <div>
       <List
-        items={rickAndMorty}
+        items={cards}
         render={(item: RickAndMorty) => (
-          <Card title={item.name} imgUrl={item.imgUrl} isOpen={item.isOpen} />
+          <Card
+            id={item.id}
+            title={item.name}
+            imgUrl={item.imgUrl}
+            isOpen={item.isOpen}
+          />
         )}
       />
     </div>

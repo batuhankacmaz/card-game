@@ -21,8 +21,8 @@ $header-text-color: #fdfdfd;
 .header {
   @extend .container-customization;
   background-color: $header-color;
-  margin: 20px auto;
-  height: 100px;
+  margin: 5px auto;
+  height: 80px;
   width: 500px;
   @include border(4px, solid, $header-text-color, 20px);
   .header_text {
